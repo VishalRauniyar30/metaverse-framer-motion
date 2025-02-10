@@ -1,10 +1,7 @@
-import styles from '@/styles'
-import React from 'react'
-
 const StartSteps = ({ number, text }) => {
     return (
-        <div className={`${styles.flexCenter} flex-row`}>
-            <div className={`${styles.flexCenter} w-[70px] h-[70px] rounded-3xl bg-[#323f5d]`}>
+        <div className='flex items-center justify-center flex-row'>
+            <div className='flex items-center justify-center w-[70px] h-[70px] rounded-3xl bg-[#323f5d]'>
                 <p className='font-bold text-[20px] text-white'>
                     {number}
                 </p>

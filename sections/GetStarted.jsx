@@ -1,9 +1,11 @@
 'use client'
+
+import { motion } from "framer-motion"
+
 import { StartSteps, TitleText, TypingText } from "@/components"
 import { startingFeatures } from "@/constants"
 import styles from "@/styles"
 import { fadeIn, planetVariants, staggerContainer } from "@/utils/motion"
-import { motion } from "framer-motion"
 
 const GetStarted = () => {
     return (
