@@ -2,19 +2,18 @@
 
 import { motion } from 'framer-motion'
 
-import styles from '@/styles'
 import { fadeIn, staggerContainer } from '@/utils/motion'
 import { TitleText, TypingText } from '@/components'
 
 const World = () => {
     return (
-        <section className={`${styles.paddings} relative z-10`}>
+        <section className='sm:p-16 xs:p-8 px-6 py-12 relative z-10'>
             <motion.div
                 variants={staggerContainer}
                 initial='hidden'
                 whileInView='show'
                 viewport={{ once: false, amount: 0.25 }}
-                className={`${styles.innerWidth} mx-auto flex flex-col`}
+                className='2xl:max-w-[1280px] w-full mx-auto flex flex-col'
             >
                 <TypingText title='| People in the World' textStyles='text-center' />
                 <TitleText title={<>Track friends around you and invite them to play together in the same world</>} textStyles='capitalize text-center' />

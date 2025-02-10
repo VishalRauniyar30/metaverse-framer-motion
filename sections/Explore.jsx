@@ -11,13 +11,13 @@ import { exploreWorlds } from "@/constants"
 const Explore = () => {
     const [active, setActive] = useState('world-2')
     return (
-        <section className={styles.paddings} id="explore">
+        <section className='sm:p-16 xs:p-8 px-6 py-12' id="explore">
             <motion.div
                 variants={staggerContainer}
                 initial='hidden'
                 whileInView='show'
                 viewport={{ once: false, amount: 0.25 }}
-                className={`${styles.innerWidth} mx-auto flex flex-col`}
+                className={`2xl:max-w-[1280px] w-full mx-auto flex flex-col`}
             >
                 <TypingText title='| The World' textStyles='text-center' />
                 <TitleText title={<>Choose the world you want <br className="md:block hidden" /> to explore</>} textStyles='text-center' />
